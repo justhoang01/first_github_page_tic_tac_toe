@@ -165,10 +165,12 @@ function add_mark(square_num) {
     //add the image to canvas
     image.onload = function() {
         ctx.drawImage(image, x, y, SQUARE_WIDTH * 0.6, SQUARE_WIDTH * 0.6);
-    }
 
-    //draw winning lines
-    draw_winning_line();
+		//draw winning lines
+	    draw_winning_line();
+	}
+
+
 
     console.log(["X", "O"][curr_player - 1] + " cliclks square " + square_num);
 }
